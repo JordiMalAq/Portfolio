@@ -8,17 +8,19 @@
     <link rel="icon" sizes="64x64" href="../assets/img/logo.png">
 </head>
 <body>
-    <nav class="menu">
-
-        <a href="../index.html"><img class="logo-principal" src="../assets/img/logo.png" alt="Logo"></a><strong>Jordi Maldonado</strong>
-
-        <div class="menu-navegacion">
-            <a class="menu-navegacion" href="../pages/sobremi.html">Sobre Mi</a>
-            <a class="menu-navegacion" href="../pages/portfolio.html">Portfolio</a>
-            <a class="menu-navegacion" href="../pages/tecnologias.html">Tecnologias</a>
-            <a class="menu-navegacion" href="../pages/contacto.html">Contacto</a>   
-        </div>
-    </nav>
+    <header>
+        <img class="logo-principal" src="../assets/img/logo.png" alt="Logo">
+        <button id="abrir" class="abrir-menu">Abrir</button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu">Cerrar</button>
+            <ul class="nav-list">
+                <li><a href="../pages/sobremi.html">Sobre Mi</a></li>
+                <li><a href="../pages/portfolio.html">Portfolio</a></li>
+                <li><a href="../pages/tecnologias.html">Tecnologias</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>   
+            </ul>
+        </nav>
+    </header>
 
     <section class="tecnologias">
         <div class="text-description">
@@ -28,6 +30,9 @@
             </p>
         </div>
     </section>
+
+    <script src="../script.js"></script>
+
 
 </body>
 </html>
