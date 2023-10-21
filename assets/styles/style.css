@@ -17,19 +17,28 @@ header {
 
 .logo-principal {
     max-width: 5rem;
+    margin-left: 10rem;
 }
 
 .titulo {
     color: white;
     font-size: 2rem;
     text-align: center;
-    padding: 1rem;
+    margin-right: 45rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.titulo:hover {
+    color: pink;
 }
 
 .nav-list {
     display: flex;
     list-style-type: none;
     gap: 1rem;
+    font-size: 1.5rem;
+    margin-right: 10rem;
 }
 
 .nav-list li a {
@@ -50,53 +59,6 @@ header {
     cursor: pointer;
 }
 
-
-@media screen and (max-width:550px) {
-    .abrir-menu,
-    .cerrar-menu {
-        display: block;
-    }
-
-    .titulo {
-        color: white;
-        font-size: 2rem;
-        text-align: center;
-        padding: 1rem;
-    }
-
-    .nav{
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 2rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0 ;
-        padding: 1rem;
-        background-color: rgb(73, 81, 85);
-    }
-
-    .abrir-menu{
-        color: white;
-    }
-
-    .cerrar-menu {
-        color: white;
-    }
-
-    nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .nav-list{
-        flex-direction: column;
-        align-items: end;
-    }
-}
 
 /* ----- fondo y texto ----- */
 
@@ -151,7 +113,7 @@ header {
     width: 350px;
     height: 50px;
     position: absolute;
-    bottom: 200px;
+    bottom: 150px;
     left: 195px;
     margin-left: 75px;
     border-radius: 18px;
@@ -257,4 +219,124 @@ h2 {
 
 .preview {
     width: 200px;
+}
+
+/*------ Querys -----*/
+
+@media (max-width:1200px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+    }
+
+    .logo-principal {
+        max-width: 5rem;
+        margin-left: 15px;
+    }
+
+    .titulo {
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        padding: 1rem;
+        margin-right: 20px;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        text-align: justify;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 1rem;
+        padding: 1rem;
+        background-color: rgb(73, 81, 85);
+    }
+
+    .abrir-menu{
+        color: white;
+    }
+
+    .cerrar-menu {
+        color: white;
+    }
+
+    nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    /*----- cuerpo -----*/
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5px;
+        align-items: center;
+    }
+    
+    .img {
+        width: 350px;
+        margin-right: 25px;
+        margin-top: 0.5px;
+    }
+    .text1 {
+        font-size: 15px;
+        color: rgb(73, 81, 85);
+        margin-left: 45px;
+        margin-top: 5px;
+    
+    }
+    
+    .text2 {
+        font-size: 20px;
+        color: rgb(73, 81, 85);
+        margin-left: 0.5px;
+        font-weight: 650;
+    }
+
+    /*----- contactos -----*/
+
+    .contactos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+    }
+    
+    .icons-contact {
+        color: white;
+        display: flex;
+        height: 35px;
+        text-align: center;
+    }
+    
+    .cv {
+        background-color: rgb(73, 81, 85);
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        width: 175px;
+        height: 50px;
+        position: absolute;
+        bottom: 5px;
+        left: 110px;
+        margin-left: 200px;
+        border-radius: 18px;
+        cursor: pointer;
+    }
+    
 }
